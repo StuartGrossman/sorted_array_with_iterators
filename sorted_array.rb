@@ -173,7 +173,7 @@ class SortedArray
     p var
   end
 
-  def inject acc=nil, &block
+  def inject(acc=nil, &block)
     @internal_arr.each do |el|
       if acc.nil?
         acc = @internal_arr[0]
